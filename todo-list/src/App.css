@@ -1,0 +1,147 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:disabled:hover {
+  background-color: #ccc;
+}
+
+div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+div:hover {
+  background-color: #e1f7d5;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.complete {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.complete:hover {
+  background-color: #45a049;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #e53935;
+}
+
+/* Strikethrough for completed tasks */
+div.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+@media (max-width: 450px) {
+  .App {
+    width: 90%;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  button {
+    width: 30%;
+  }
+
+  div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    margin-top: 5px;
+  }
+}
